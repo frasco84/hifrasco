@@ -1,0 +1,33 @@
+:root {
+  --color-swatch-12: #00080D;
+  --color-swatch-11: #161E23;
+  --color-swatch-10: #2C3439;
+  --color-swatch-9: #424A4F;
+  --color-swatch-8: #586065;
+  --color-swatch-7: #6E767B;
+  --color-swatch-6: #848C91;
+  --color-swatch-5: #9AA2A7;
+  --color-swatch-4: #B0B8BD;
+  --color-swatch-3: #C6CED3;
+  --color-swatch-2: #DCE4E9;
+  --color-swatch-1: #F2FAFF;
+}
+
+.colorBox {
+  width: 640px;
+  height: 40px;
+}
+
+
+.bgColorSwatch12 { background-color: var(--color-swatch-12); }
+.bgColorSwatch11 { background-color: var(--color-swatch-11); }
+.bgColorSwatch10 { background-color: var(--color-swatch-10); }
+.bgColorSwatch9 { background-color: var(--color-swatch-9); }
+.bgColorSwatch8 { background-color: var(--color-swatch-8); }
+.bgColorSwatch7 { background-color: var(--color-swatch-7); }
+.bgColorSwatch6 { background-color: var(--color-swatch-6); }
+.bgColorSwatch5 { background-color: var(--color-swatch-5); }
+.bgColorSwatch4 { background-color: var(--color-swatch-4); }
+.bgColorSwatch3 { background-color: var(--color-swatch-3); }
+.bgColorSwatch2 { background-color: var(--color-swatch-2); }
+.bgColorSwatch1 { background-color: var(--color-swatch-1); }
