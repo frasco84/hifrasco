@@ -11,6 +11,29 @@
   --color-swatch-3: #C6CED3;
   --color-swatch-2: #DCE4E9;
   --color-swatch-1: #F2FAFF;
+  
+  --color-green-3: #0C511F;
+  --color-green-2: #25FC69;
+  --color-green-1: #A0FBC3;
+
+  /* High level variables */
+  /* This ones have a specific task */
+
+  /* Light mode */
+  --lm-bg-level0-color: var(--color-swatch-3);
+  --lm-bg-level1-color: var(--color-swatch-2);
+  --lm-bg-level2-color: var(--color-swatch-1);
+  
+  --lm-body-color: var(--color-swatch-10);
+  --lm-positive-color: var(--color-green-3);
+
+  /* Dark mode */
+  --dm-bg-level0-color: var(--color-swatch-10);
+  --dm-bg-level1-color: var(--color-swatch-11);
+  --dm-bg-level2-color: var(--color-swatch-12);
+
+  --dm-body-color: var(--color-swatch-6);
+  --dm-positive-color: var(--color-green-2);
 }
 
 .colorBox {
@@ -18,6 +41,44 @@
   height: 40px;
 }
 
+body.light-mode {
+  background-color: var(--lm-bg-level0-color);
+  color: var(--lm-body-color);
+}
+
+body.dark-mode {
+  background-color: var(--dm-bg-level0-color);
+  color: var(--dm-body-color);
+}
+
+h2 {
+  color: var(--dm-positive-color);
+}
+
+.card {
+  padding: 32px; 
+}
+
+.dark-mode .card {
+  background-color: var(--dm-bg-level1-color);
+}
+
+.light-mode .card {
+  background-color: var(--lm-bg-level1-color);
+}
+
+.colorSwatch12 { color: var(--color-swatch-12); }
+.colorSwatch11 { color: var(--color-swatch-11); }
+.colorSwatch10 { color: var(--color-swatch-10); }
+.colorSwatch9 { color: var(--color-swatch-9); }
+.colorSwatch8 { color: var(--color-swatch-8); }
+.colorSwatch7 { color: var(--color-swatch-7); }
+.colorSwatch6 { color: var(--color-swatch-6); }
+.colorSwatch5 { color: var(--color-swatch-5); }
+.colorSwatch4 { color: var(--color-swatch-4); }
+.colorSwatch3 { color: var(--color-swatch-3); }
+.colorSwatch2 { color: var(--color-swatch-2); }
+.colorSwatch1 { color: var(--color-swatch-1); }
 
 .bgColorSwatch12 { background-color: var(--color-swatch-12); }
 .bgColorSwatch11 { background-color: var(--color-swatch-11); }
