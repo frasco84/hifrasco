@@ -37,7 +37,7 @@
   --dm-bg-level2-color: var(--color-swatch-12);
 
   --dm-body-color: var(--color-swatch-2);
-  --dm-positive-color: var(--color-green-1);
+  --dm-positive-color: var(--color-green-2);
 }
 
 
@@ -176,15 +176,19 @@ h2 {
 }
 
 .card {
-  padding: 32px; 
+  padding: 8px 0px;
+  margin-top: 32px;
+ 
 }
 
 .dark-mode .card {
-  background-color: var(--dm-bg-level1-color);
+  border-top: 1px solid var(--color-swatch-8); 
+ /* background-color: var(--dm-bg-level1-color);*/
 }
 
 .light-mode .card {
-  background-color: var(--lm-bg-level1-color);
+  border-top: 1px solid var(--color-swatch-5); 
+  /*background-color: var(--lm-bg-level1-color);*/
 }
 
 
