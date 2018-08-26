@@ -1,15 +1,19 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 :root {
   --color-swatch-12: #00080D;
-  --color-swatch-11: #161E23;
-  --color-swatch-10: #2C3439;
-  --color-swatch-9: #424A4F;
-  --color-swatch-8: #586065;
-  --color-swatch-7: #6E767B;
-  --color-swatch-6: #848C91;
-  --color-swatch-5: #9AA2A7;
-  --color-swatch-4: #B0B8BD;
-  --color-swatch-3: #C6CED3;
-  --color-swatch-2: #DCE4E9;
+  --color-swatch-11: #20282D;
+  --color-swatch-10: #3E464B;
+  --color-swatch-9: #5A6267;
+  --color-swatch-8: #747C81;
+  --color-swatch-7: #8C9499;
+  --color-swatch-6: #A2AAAF;
+  --color-swatch-5: #B6BEC3;
+  --color-swatch-4: #C8D0D5;
+  --color-swatch-3: #D8E0E5;
+  --color-swatch-2: #E6EEF3;
   --color-swatch-1: #F2FAFF;
   
   --color-green-3: #0C511F;
@@ -24,22 +28,39 @@
   --lm-bg-level1-color: var(--color-swatch-2);
   --lm-bg-level2-color: var(--color-swatch-1);
   
-  --lm-body-color: var(--color-swatch-10);
-  --lm-positive-color: var(--color-green-3);
+  --lm-body-color: var(--color-swatch-11);
+  --lm-positive-color: var(--color-green-2);
 
   /* Dark mode */
   --dm-bg-level0-color: var(--color-swatch-10);
   --dm-bg-level1-color: var(--color-swatch-11);
   --dm-bg-level2-color: var(--color-swatch-12);
 
-  --dm-body-color: var(--color-swatch-6);
-  --dm-positive-color: var(--color-green-2);
+  --dm-body-color: var(--color-swatch-2);
+  --dm-positive-color: var(--color-green-1);
 }
 
-.colorBox {
-  width: 640px;
-  height: 40px;
+
+@font-face {
+  font-family: 'Brown';
+  src: url('../fonts/Brown-Regular.eot');
+  src: url('../fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Brown-Regular.woff2') format('woff2'),
+    url('../fonts/Brown-Regular.woff') format('woff'),
+    url('../fonts/Brown-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
+
+body {
+  margin: 0;
+  font-family: 'Brown', sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
 
 body.light-mode {
   background-color: var(--lm-bg-level0-color);
@@ -55,17 +76,8 @@ h2 {
   color: var(--dm-positive-color);
 }
 
-.card {
-  padding: 32px; 
-}
 
-.dark-mode .card {
-  background-color: var(--dm-bg-level1-color);
-}
 
-.light-mode .card {
-  background-color: var(--lm-bg-level1-color);
-}
 
 .colorSwatch12 { color: var(--color-swatch-12); }
 .colorSwatch11 { color: var(--color-swatch-11); }
@@ -92,3 +104,122 @@ h2 {
 .bgColorSwatch3 { background-color: var(--color-swatch-3); }
 .bgColorSwatch2 { background-color: var(--color-swatch-2); }
 .bgColorSwatch1 { background-color: var(--color-swatch-1); }
+
+
+.header {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.switchButton {
+  background-color: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.2s;
+}
+.switchButton:focus {
+  outline: none;
+}
+
+.dark-mode .switchButton {
+  color: var(--dm-body-color);
+  background-color: var(--dm-bg-level0-color);
+  border-color:  var(--dm-body-color);
+}
+.dark-mode .switchButton:hover {
+  background-color:  var(--dm-bg-level1-color);
+}
+.dark-mode .switchButton:active {
+  background-color:  var(--dm-bg-level2-color);
+}
+
+
+.light-mode .switchButton {
+  color: var(--lm-body-color);
+  background-color: var(--lm-bg-level0-color);
+    border-color:  var(--lm-body-color);
+}
+.Light-mode .switchButton:hover {
+  background-color:  var(--lm-bg-level1-color);
+}
+.Light-mode .switchButton:active {
+  background-color:  var(--lm-bg-level2-color);
+  -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+
+
+
+
+.main-section {
+  padding: 16px;
+}
+
+.intro-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.colorBox {
+  width: 640px;
+  height: 40px;
+}
+
+.card {
+  padding: 32px; 
+}
+
+.dark-mode .card {
+  background-color: var(--dm-bg-level1-color);
+}
+
+.light-mode .card {
+  background-color: var(--lm-bg-level1-color);
+}
+
+
+
+.bottom-section {
+  padding: 16px;
+
+}
+
+
+.social-section {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-box {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.social-icon-box {
+  width: 24px;
+}
+.social-icon-image {
+  width: 24px;
+  color: red;
+  fill: currentColor;
+}
+
+.social-icon-text {
+  margin-left: 8px;
+}
+
+
+.social-icon-link {
+  text-decoration: none;
+}
