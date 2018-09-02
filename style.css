@@ -45,6 +45,11 @@
   --dm-body-color: var(--color-swatch-2);
   --dm-positive-color: var(--color-green-2);
   --dm-informative-color: var(--color-blue-3);
+
+  /* Spacing */
+  --space-s: 8px;
+  --space-m: 24px;
+  --space-l: 40px;
 }
 
 
@@ -102,8 +107,8 @@ img {
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: var(--space-m);
+  padding-right: var(--space-m);
 }
 
 @media (min-width: 1440px) {
@@ -143,11 +148,11 @@ img {
 }
 
 .project-image {
-  margin-bottom: 16px;
+  margin-bottom: var(--space-m);
 }
 
 .project-wrapper {
-  margin-bottom: 64px;
+  margin-bottom: var(--space-l);
 }
 
 .intro-section {
