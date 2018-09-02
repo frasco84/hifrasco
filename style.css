@@ -1,7 +1,3 @@
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
 :root {
   --color-swatch-12: #00080D;
   --color-swatch-11: #20282D;
@@ -23,28 +19,6 @@
   --color-blue-3: #266772;
   --color-blue-2: #8DFDF7;
   --color-blue-1: #EFFFFE;
-  
-
-  /* High level variables */
-  /* This ones have a specific task */
-
-  /* Light mode */
-  --lm-bg-level0-color: var(--color-swatch-2);
-  --lm-bg-level1-color: var(--color-swatch-2);
-  --lm-bg-level2-color: var(--color-swatch-3);
-  
-  --lm-body-color: var(--color-swatch-11);
-  --lm-positive-color: var(--color-green-2);
-  --lm-informative-color: var(--color-blue-1);
-
-  /* Dark mode */
-  --dm-bg-level0-color: var(--color-swatch-11);
-  --dm-bg-level1-color: var(--color-swatch-11);
-  --dm-bg-level2-color: var(--color-swatch-10);
-
-  --dm-body-color: var(--color-swatch-2);
-  --dm-positive-color: var(--color-green-2);
-  --dm-informative-color: var(--color-blue-3);
 
   /* Spacing */
   --space-s: 8px;
@@ -52,6 +26,9 @@
   --space-l: 40px;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 @font-face {
   font-family: 'Brown';
@@ -71,17 +48,6 @@ body {
 
 a {
   color: inherit;
-}
-
-
-body.light-mode {
-  background-color: var(--lm-bg-level0-color);
-  color: var(--lm-body-color);
-}
-
-body.dark-mode {
-  background-color: var(--dm-bg-level0-color);
-  color: var(--dm-body-color);
 }
 
 h2 {
@@ -116,32 +82,6 @@ img {
     max-width: 1280px;
   }
 }
-
-.colorSwatch12 { color: var(--color-swatch-12); }
-.colorSwatch11 { color: var(--color-swatch-11); }
-.colorSwatch10 { color: var(--color-swatch-10); }
-.colorSwatch9 { color: var(--color-swatch-9); }
-.colorSwatch8 { color: var(--color-swatch-8); }
-.colorSwatch7 { color: var(--color-swatch-7); }
-.colorSwatch6 { color: var(--color-swatch-6); }
-.colorSwatch5 { color: var(--color-swatch-5); }
-.colorSwatch4 { color: var(--color-swatch-4); }
-.colorSwatch3 { color: var(--color-swatch-3); }
-.colorSwatch2 { color: var(--color-swatch-2); }
-.colorSwatch1 { color: var(--color-swatch-1); }
-
-.bgColorSwatch12 { background-color: var(--color-swatch-12); }
-.bgColorSwatch11 { background-color: var(--color-swatch-11); }
-.bgColorSwatch10 { background-color: var(--color-swatch-10); }
-.bgColorSwatch9 { background-color: var(--color-swatch-9); }
-.bgColorSwatch8 { background-color: var(--color-swatch-8); }
-.bgColorSwatch7 { background-color: var(--color-swatch-7); }
-.bgColorSwatch6 { background-color: var(--color-swatch-6); }
-.bgColorSwatch5 { background-color: var(--color-swatch-5); }
-.bgColorSwatch4 { background-color: var(--color-swatch-4); }
-.bgColorSwatch3 { background-color: var(--color-swatch-3); }
-.bgColorSwatch2 { background-color: var(--color-swatch-2); }
-.bgColorSwatch1 { background-color: var(--color-swatch-1); }
 
 .project-details {
   margin: 0;
@@ -183,37 +123,6 @@ img {
   outline: none;
 }
 
-.dark-mode .switchButton {
-  color: var(--dm-body-color);
-  background-color: var(--dm-bg-level0-color);
-  border-color:  var(--dm-body-color);
-}
-.dark-mode .switchButton:hover {
-  background-color:  var(--dm-bg-level1-color);
-}
-.dark-mode .switchButton:active {
-  background-color:  var(--dm-bg-level2-color);
-}
-
-
-.light-mode .switchButton {
-  color: var(--lm-body-color);
-  background-color: var(--lm-bg-level0-color);
-    border-color:  var(--lm-body-color);
-}
-.Light-mode .switchButton:hover {
-  background-color:  var(--lm-bg-level1-color);
-}
-.Light-mode .switchButton:active {
-  background-color:  var(--lm-bg-level2-color);
-  -webkit-box-shadow: none;
-   box-shadow: none;
-}
-
-
-
-
-
 .main-section {
   padding: 16px;
 }
@@ -235,23 +144,10 @@ img {
  
 }
 
-.dark-mode .card {
-  border-top: 2px solid var(--dm-informative-color); 
-  /*background-color: var(--dm-bg-level1-color);*/
-}
-
-.light-mode .card {
-  border-top: 2px solid var(--lm-informative-color); 
-  /*background-color: var(--lm-bg-level1-color);*/
-}
-
-
-
 .bottom-section {
   padding: 16px;
 
 }
-
 
 .social-section {
   display: flex;

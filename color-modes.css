@@ -1,0 +1,120 @@
+:root {
+  --color-swatch-12: #00080D;
+  --color-swatch-11: #20282D;
+  --color-swatch-10: #3E464B;
+  --color-swatch-9: #5A6267;
+  --color-swatch-8: #747C81;
+  --color-swatch-7: #8C9499;
+  --color-swatch-6: #A2AAAF;
+  --color-swatch-5: #B6BEC3;
+  --color-swatch-4: #C8D0D5;
+  --color-swatch-3: #D8E0E5;
+  --color-swatch-2: #E6EEF3;
+  --color-swatch-1: #F2FAFF;
+  
+  --color-green-3: #0C511F;
+  --color-green-2: #25FC69;
+  --color-green-1: #A0FBC3;
+
+  --color-blue-3: #266772;
+  --color-blue-2: #8DFDF7;
+  --color-blue-1: #EFFFFE;
+
+  /* Light mode */
+  --lm-bg-level0-color: var(--color-swatch-2);
+  --lm-bg-level1-color: var(--color-swatch-2);
+  --lm-bg-level2-color: var(--color-swatch-3);
+  
+  --lm-body-color: var(--color-swatch-11);
+  --lm-positive-color: var(--color-green-2);
+  --lm-informative-color: var(--color-blue-1);
+
+  /* Dark mode */
+  --dm-bg-level0-color: var(--color-swatch-11);
+  --dm-bg-level1-color: var(--color-swatch-11);
+  --dm-bg-level2-color: var(--color-swatch-10);
+
+  --dm-body-color: var(--color-swatch-2);
+  --dm-positive-color: var(--color-green-2);
+  --dm-informative-color: var(--color-blue-3);
+}
+
+body.light-mode {
+  background-color: var(--lm-bg-level0-color);
+  color: var(--lm-body-color);
+}
+
+body.dark-mode {
+  background-color: var(--dm-bg-level0-color);
+  color: var(--dm-body-color);
+}
+
+h2.Light-mode {
+  /*color: var(--lm-positive-color);*/
+}
+
+h2.dark-mode {
+  /*color: var(--dm-positive-color);*/
+}
+
+.colorSwatch12 { color: var(--color-swatch-12); }
+.colorSwatch11 { color: var(--color-swatch-11); }
+.colorSwatch10 { color: var(--color-swatch-10); }
+.colorSwatch9 { color: var(--color-swatch-9); }
+.colorSwatch8 { color: var(--color-swatch-8); }
+.colorSwatch7 { color: var(--color-swatch-7); }
+.colorSwatch6 { color: var(--color-swatch-6); }
+.colorSwatch5 { color: var(--color-swatch-5); }
+.colorSwatch4 { color: var(--color-swatch-4); }
+.colorSwatch3 { color: var(--color-swatch-3); }
+.colorSwatch2 { color: var(--color-swatch-2); }
+.colorSwatch1 { color: var(--color-swatch-1); }
+
+.bgColorSwatch12 { background-color: var(--color-swatch-12); }
+.bgColorSwatch11 { background-color: var(--color-swatch-11); }
+.bgColorSwatch10 { background-color: var(--color-swatch-10); }
+.bgColorSwatch9 { background-color: var(--color-swatch-9); }
+.bgColorSwatch8 { background-color: var(--color-swatch-8); }
+.bgColorSwatch7 { background-color: var(--color-swatch-7); }
+.bgColorSwatch6 { background-color: var(--color-swatch-6); }
+.bgColorSwatch5 { background-color: var(--color-swatch-5); }
+.bgColorSwatch4 { background-color: var(--color-swatch-4); }
+.bgColorSwatch3 { background-color: var(--color-swatch-3); }
+.bgColorSwatch2 { background-color: var(--color-swatch-2); }
+.bgColorSwatch1 { background-color: var(--color-swatch-1); }
+
+.dark-mode .switchButton {
+  color: var(--dm-body-color);
+  background-color: var(--dm-bg-level0-color);
+  border-color:  var(--dm-body-color);
+}
+.dark-mode .switchButton:hover {
+  background-color:  var(--dm-bg-level1-color);
+}
+.dark-mode .switchButton:active {
+  background-color:  var(--dm-bg-level2-color);
+}
+
+.light-mode .switchButton {
+  color: var(--lm-body-color);
+  background-color: var(--lm-bg-level0-color);
+    border-color:  var(--lm-body-color);
+}
+.Light-mode .switchButton:hover {
+  background-color:  var(--lm-bg-level1-color);
+}
+.Light-mode .switchButton:active {
+  background-color:  var(--lm-bg-level2-color);
+  -webkit-box-shadow: none;
+   box-shadow: none;
+}
+
+.dark-mode .card {
+  border-top: 2px solid var(--dm-informative-color); 
+  /*background-color: var(--dm-bg-level1-color);*/
+}
+
+.light-mode .card {
+  border-top: 2px solid var(--lm-informative-color); 
+  /*background-color: var(--lm-bg-level1-color);*/
+}
