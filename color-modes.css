@@ -83,30 +83,35 @@ h2.dark-mode {
 .bgColorSwatch2 { background-color: var(--color-swatch-2); }
 .bgColorSwatch1 { background-color: var(--color-swatch-1); }
 
-.dark-mode .switchButton {
-  color: var(--dm-body-color);
-  background-color: var(--dm-bg-level0-color);
-  border-color:  var(--dm-body-color);
-}
-.dark-mode .switchButton:hover {
-  background-color:  var(--dm-bg-level1-color);
-}
-.dark-mode .switchButton:active {
-  background-color:  var(--dm-bg-level2-color);
+.switch-button {
+  appearance: none;
+  background-color: var(--color-swatch-6);
+  border: 0;
+  height: 24px;
+  width: 40px;
+  border-radius: 12px;
+  position: relative;
 }
 
-.light-mode .switchButton {
-  color: var(--lm-body-color);
-  background-color: var(--lm-bg-level0-color);
-    border-color:  var(--lm-body-color);
+.switch-button:after {
+  content: '';
+  background-color: var(--color-swatch-1);
+  height: 20px;
+  width: 20px;
+  display: block;
+  border-radius: 10px;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  transition: .3s;
 }
-.Light-mode .switchButton:hover {
-  background-color:  var(--lm-bg-level1-color);
+
+.dark-mode .switch-button:after {
+  transform: translateX(16px);
 }
-.Light-mode .switchButton:active {
-  background-color:  var(--lm-bg-level2-color);
-  -webkit-box-shadow: none;
-   box-shadow: none;
+
+.dark-mode .switch-button {
+  background-color: var(--color-swatch-9);
 }
 
 .dark-mode .card {

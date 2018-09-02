@@ -6,8 +6,6 @@
   </head>
   <body id='body' class='light-mode'>
 
-    <!-- <button class='switchButton'>switch mode</button> -->
-
     <div class="header-wrapper">
       <div class="container">
         <header>
@@ -27,7 +25,7 @@
 
 
                 <div class="header-menu-item">
-                  <a href="" class="link">Ho</a>
+                  <button class='js-switch-button switch-button'></button>
                 </div>
               </div>
             </div>
@@ -75,7 +73,7 @@
     </div>
 
     <script type="text/javascript">
-      const switchButton = document.querySelector('.switchButton')
+      const switchButton = document.querySelector('.js-switch-button')
 
       switchButton.addEventListener("click", function(){
         if(document.getElementById("body").classList[0] === 'dark-mode'){

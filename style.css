@@ -56,14 +56,6 @@ h2 {
   font-size: 16px;
 }
 
-h2.Light-mode {
-  /*color: var(--lm-positive-color);*/
-}
-
-h2.dark-mode {
-  /*color: var(--dm-positive-color);*/
-}
-
 img {
   max-width: 100%;
 }
@@ -131,22 +123,6 @@ img {
   background-color: var(--color-swatch-3);
   padding: 128px 0;
 
-}
-
-.switchButton {
-  background-color: none;
-  border-radius: 4px;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 12px;
-  cursor: pointer;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.2s;
-}
-.switchButton:focus {
-  outline: none;
 }
 
 .main-section {
