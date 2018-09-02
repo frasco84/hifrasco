@@ -68,6 +68,10 @@ img {
   max-width: 100%;
 }
 
+.link {
+  text-decoration: none; 
+}
+
 .container {
   border: 1px solid red;
   max-width: 1000px;
@@ -81,6 +85,34 @@ img {
   .container {
     max-width: 1280px;
   }
+}
+
+.header-wrapper {
+  position: sticky;
+  top: 0px;
+}
+
+.header-container {
+  border: 1px solid green;
+  display: flex;
+  padding: var(--space-s) 0;
+}
+
+.header-left-section {
+  border: 1px solid blue;
+}
+
+.header-right-section {
+  border: 1px solid green;
+  margin-left: auto;
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-item {
+  margin-left: var(--space-m);
 }
 
 .project-details {
@@ -98,13 +130,7 @@ img {
 .intro-section {
   background-color: var(--color-swatch-3);
   padding: 128px 0;
-}
 
-.header {
-  padding: 16px;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
 }
 
 .switchButton {
