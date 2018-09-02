@@ -1,0 +1,67 @@
+<html>
+<head>
+  <title>Existencia Matters by Frasco</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id='body' class='dark-mode'>
+
+  <div class="container">
+      
+      <div class="top-section">
+        <div class="header">
+          <div class="intro-text"> Existencia Matters </div>
+          
+          <button class='switchButton'>switch mode</button>
+        </div>
+      </div>
+      
+      <div class="main-section">
+        <div>
+
+          <div class='card'>
+          	 <h2>
+            Remmember why you started
+          </h2>
+            Remmember why you started
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="bottom-section">
+
+        <div class="social-section">
+          
+          <a href="https://www.instagram.com/frascoromano/" class="social-icon-link">
+            <div class="social-box">
+              
+              <div class="social-icon-box">
+
+                <img class="social-icon-image" src="img/instagram-icon.svg">
+              </div>
+
+              <div class="social-icon-text">@frascoromano</div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+  <script type="text/javascript">
+    const switchButton = document.querySelector('.switchButton')
+
+    switchButton.addEventListener("click", function(){
+      if(document.getElementById("body").classList[0] === 'dark-mode'){
+        document.getElementById("body").classList = 'light-mode'
+      } else {
+        document.getElementById("body").classList = 'dark-mode'
+      }
+    })
+  </script>
+
+</body>
+</html>
