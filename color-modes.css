@@ -131,3 +131,8 @@ h2.dark-mode {
 .dark-mode .intro-section {
   background-color: var(--color-swatch-12);
 }
+
+.colorBox {
+  width: 640px;
+  height: 40px;
+}
