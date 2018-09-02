@@ -20,24 +20,31 @@
   --color-green-2: #25FC69;
   --color-green-1: #A0FBC3;
 
+  --color-blue-3: #266772;
+  --color-blue-2: #8DFDF7;
+  --color-blue-1: #EFFFFE;
+  
+
   /* High level variables */
   /* This ones have a specific task */
 
   /* Light mode */
-  --lm-bg-level0-color: var(--color-swatch-3);
+  --lm-bg-level0-color: var(--color-swatch-2);
   --lm-bg-level1-color: var(--color-swatch-2);
-  --lm-bg-level2-color: var(--color-swatch-1);
+  --lm-bg-level2-color: var(--color-swatch-3);
   
   --lm-body-color: var(--color-swatch-11);
   --lm-positive-color: var(--color-green-2);
+  --lm-informative-color: var(--color-blue-1);
 
   /* Dark mode */
-  --dm-bg-level0-color: var(--color-swatch-10);
+  --dm-bg-level0-color: var(--color-swatch-11);
   --dm-bg-level1-color: var(--color-swatch-11);
-  --dm-bg-level2-color: var(--color-swatch-12);
+  --dm-bg-level2-color: var(--color-swatch-10);
 
   --dm-body-color: var(--color-swatch-2);
   --dm-positive-color: var(--color-green-2);
+  --dm-informative-color: var(--color-blue-3);
 }
 
 
@@ -72,10 +79,24 @@ body.dark-mode {
   color: var(--dm-body-color);
 }
 
-h2 {
-  color: var(--dm-positive-color);
+h2.Light-mode {
+  color: var(--lm-body-color);
+  /*color: var(--lm-positive-color);*/
+  margin-top: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+
 }
 
+h2.dark-mode {
+  color: var(--dm-body-color);
+  /*color: var(--dm-positive-color);*/
+  margin-top: 0px;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 16px;
+}
 
 
 
@@ -165,9 +186,9 @@ h2 {
 }
 
 .intro-text {
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 16px;
 }
 
 .colorBox {
@@ -182,12 +203,12 @@ h2 {
 }
 
 .dark-mode .card {
-  border-top: 1px solid var(--color-swatch-8); 
- /* background-color: var(--dm-bg-level1-color);*/
+  border-top: 2px solid var(--dm-informative-color); 
+  /*background-color: var(--dm-bg-level1-color);*/
 }
 
 .light-mode .card {
-  border-top: 1px solid var(--color-swatch-5); 
+  border-top: 2px solid var(--lm-informative-color); 
   /*background-color: var(--lm-bg-level1-color);*/
 }
 
