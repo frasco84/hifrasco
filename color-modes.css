@@ -123,3 +123,11 @@ h2.dark-mode {
   border-top: 2px solid var(--lm-informative-color); 
   /*background-color: var(--lm-bg-level1-color);*/
 }
+
+.light-mode .intro-section {
+  background-color: var(--color-swatch-1);
+}
+
+.dark-mode .intro-section {
+  background-color: var(--color-swatch-12);
+}
