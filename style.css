@@ -31,19 +31,24 @@
 }
 
 @font-face {
-  font-family: 'Brown';
-  src: url('../fonts/Brown-Regular.eot');
-  src: url('../fonts/Brown-Regular.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/Brown-Regular.woff2') format('woff2'),
-    url('../fonts/Brown-Regular.woff') format('woff'),
-    url('../fonts/Brown-Regular.ttf') format('truetype');
+  font-family: 'Neuzeit S LT Std';
+  src: url('fonts/NeuzeitSLTStd-BookHeavy.woff2') format('woff2'),
+      url('fonts/NeuzeitSLTStd-BookHeavy.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit S LT Std';
+  src: url('fonts/NeuzeitSLTStd-Book.woff2') format('woff2'),
+      url('fonts/NeuzeitSLTStd-Book.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: 'Brown', sans-serif;
+  font-family: 'Neuzeit S LT Std', serif;
 }
 
 a {
